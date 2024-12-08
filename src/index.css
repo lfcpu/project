@@ -97,6 +97,17 @@
   }
 }
 
+@keyframes float-photo {
+  0%, 100% {
+    filter: drop-shadow(0 0 10px rgba(255, 192, 203, 0.3));
+    transform: translateZ(0) scale(1);
+  }
+  50% {
+    filter: drop-shadow(0 0 20px rgba(255, 192, 203, 0.5));
+    transform: translateZ(20px) scale(1.05);
+  }
+}
+
 .animate-float {
   animation: float 4s ease-in-out infinite;
 }
@@ -133,6 +144,16 @@
 
 .floating-hearts {
   animation: floating-hearts 10s linear infinite;
+}
+
+.floating-photo {
+  animation: float-photo 15s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px rgba(255, 192, 203, 0.3));
+}
+
+.floating-photo:hover {
+  animation-play-state: paused;
+  z-index: 50 !important;
 }
 
 .hanging-photo {

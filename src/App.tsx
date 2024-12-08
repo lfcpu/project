@@ -4,10 +4,12 @@ import { Timeline } from './components/Timeline';
 import { Gallery } from './components/Gallery';
 import { LoveQuote } from './components/LoveQuote';
 import { ParallaxHeart } from './components/ParallaxHeart';
+import { FloatingPhotos } from './components/FloatingPhotos';
 
 function App() {
   return (
     <div className="min-h-screen relative">
+      <FloatingPhotos />
       <ParallaxHeart />
       <Hero />
       <LoveQuote />
